@@ -1,0 +1,1008 @@
+Full Stack Development.
+=======================
+
+HTML
+=====
+
+HTML - HTML stands for hypertext markup lamguage and it's used to creare a webpage. it's a building block of a web page 
+
+Basic Tags
+==========
+
+1. Heading Tag - it's used to create a heading in the webpage.
+
+example
+
+<h1> JavaScript </h1>
+<h2> HTML </h2>
+<h3> HTML </h3>
+<h4> CSS </h4>
+<h5> Python </h5>
+<h6> MySQL </h6>
+
+=========================================================================================================
+
+2. Paragraph Tag - it's used to create a paragraph in the webpage.
+
+Example 
+
+<p>
+    I am Worling in Software Engineer
+</p>
+
+=========================================================================================================
+
+3. Anker Tag - it's used to insert a one page to another page.
+
+Example 
+
+<a href="https://www.youtube.com/">YouTube</a>
+href="" - attribute (hyper link reference)
+
+=========================================================================================================
+
+4. Image Tage - It's used to add one image in the html webpag.
+
+Example 
+
+<img src="sweets.jpg">
+
+=========================================================================================================
+
+5. Brake Tage - It's used to to brake tage from one tag to another tage.
+
+Example 
+
+<img src="sweets.jpg"> <br>
+<a href="https://www.youtube.com/watch?v=VpJDmKKz3yg">Love Sangs</a>
+
+=========================================================================================================
+
+6. Center Tag - It's used to proceed the all elememts in the center point on webpage.
+
+Example
+
+<center>
+<img src="sweets.jpg" alt="SWeets Image" width="200px"> <br>
+<a href="https://www.youtube.com/watch?v=VpJDmKKz3yg">Love Sangs</a>
+</center>
+
+=========================================================================================================
+
+7. HTML List - Two types of list hear below.
+
+1. order list - it's list in numbers
+Example
+
+<ol>
+    <li> Saravanan </li>
+    <li> Kumari </li>
+    <li> Sangavi </li>
+    <li> Ajith Kumar </li>
+</ol>
+
+ 
+2. unorder list - it's list in Points
+Example
+
+<ul>
+    <li> Saravanan </li>
+    <li> Kumari </li>
+    <li> Sangavi </li>
+    <li> Ajith Kumar </li>
+</ul>
+
+========================================================================================================
+
+8. iframe Tag - An inline frame is used to embaded another document within the current HTML document.
+
+Example 
+
+<iframe src="https://www.moviesda.now/tamilrockers/">
+</iframe>
+
+=======================================================================================================
+
+9. HR Tag - It's used to create a underline in the html webpage.
+
+Example 
+
+<ul>
+    <li> Saravanan </li>
+    <li> Kumari </li>
+    <li> Sangavi </li>
+    <li> Ajith Kumar </li>
+</ul>
+<hr>
+
+========================================================================================================
+
+10. Tittle Tag - It's usedto create a title on the html webpage.
+
+Example 
+
+<head>
+    <title>Murugan Sweets Shop</title>
+    <link rel="icon" href="sweets.jpg">
+</head>
+
+========================================================================================================
+
+11 lorem Tag - it's used to create a paragraph in the webpage.
+
+Example 
+
+<p>
+    lorem100
+</p>
+
+=======================================================================================================
+
+12 Div Tag - div is called as division it's just provide a continier.
+
+Example.
+
+<div>
+    <h1 style="color: wheat;">Ajith Kumar P S</h1>
+    <p style="color: blue;">Software Engineer</p>
+</div>
+
+<style>
+    div{
+        background-color: red;
+        width: 300px;
+        height: 100px;
+    }
+</style>
+
+========================================================================================================
+
+13. Link Tag - Link tag is used to link the css file from the html file.
+
+Example 
+<link rel="stylesheet" href="index.css">
+
+========================================================================================================
+
+HTML Tables & Forms
+===================
+
+
+12. Select Tag - it's used to select the multiple options in the webpahe.
+
+Example 
+
+<form>
+<table>
+    <tr>
+        <td> Department </td>
+        <td>
+            <select>
+                <option> JavaScript </option>
+                <option> Python </option>
+                <option> Angular </option>
+                <option> NodeJS </option>
+            </select>
+        </td>
+    </tr>
+</table>
+</form>
+
+========================================================================================================
+
+Example Code For HTML Tables & Forms
+
+center>
+<h1>Employees Registration Form</h1>
+<form>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><Input type="text" placeholder="Enter Your Name"></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><Input type="number" placeholder="Enter Your Age"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><Input type="text" placeholder="Enter Your Address"></td>
+        </tr>
+        <tr>
+            <td>Department</td>
+            <td>
+                <select>
+                    <option>Python Programming</option>
+                    <option>Java Script</option>
+                    <option>C Programming</option>
+                    <option>C++</option>
+                    <option>Data Stacture</option>
+                    <option>Angular</option>
+                    <option>Mysql</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td><td><Input type="submit"></td>
+        </tr>
+    </table>
+</form>
+</center>
+
+======================================================================================================
+
+CSS
+===
+
+CSS - CSS stands for Cascading Style Sheet. it's used to style and format webpages created by HTML.
+
+Three types of CSS
+==================
+
+1. inline CSS
+2. internal CSS
+3. external CSS
+
+========================================================================================================
+
+1. inline CSS - It's used to create style within a single line in the html code.
+
+Example 
+<h1 style="color: green; background-color: black;"> heading </h1>
+ 
+========================================================================================================
+
+2. internal CSS - It's used to add the style and color within same html file.
+
+Example
+<h1>Heading</h1>
+<p> I am Ajith Kumar</p>
+<style>
+    h1{
+        color: green;
+    }
+    p{
+        color: blue;
+    }
+</style>
+
+========================================================================================================
+
+3. External CSS - it's create a seperate file called style.css. link the style.css to your html using link tag.
+
+Example
+HTML File
+ 
+<h1>Heading</h1>
+<link rel="stylesheet" href="index.css">
+
+CSS File 
+
+h1{
+    color: red;
+}
+
+========================================================================================================
+
+CSS Selectors
+=============
+
+1. Element Selector
+2. Class Selectors
+3. ID Selectors
+4. Universal Selectors
+
+========================================================================================================
+
+1. Element Selector - it's used to directaly select the element and add the styles & colors in the css file.
+
+HTML Example
+
+<link rel="stylesheet" href="index.css">
+<h1>Ajith Kumar</h1>
+<h1>Saravanan</h1>
+<p> Software Engineer </p>
+
+CSS Example 
+
+h1{
+    color: red;
+  }
+  
+p{
+   color: blue;
+ }
+ 
+========================================================================================================
+
+2. Class Selectors - it's used to create a class name in the html file & proceed a style & color using class name in the css file.
+
+HTML Example
+
+<link rel="stylesheet" href="index.css">
+<h1 class="one">Ajith Kumar</h1>
+<h1 class="two">Saravanan</h1>
+
+CSS Example 
+
+.one{
+    color: blue;
+}
+.two{
+    color: green;
+}
+
+========================================================================================================
+
+3. ID Selectors - it's used to create a id name in the html file & proceed a style & color using id name in the css file but in the hole html file we are create only one id name, we are not able to proceed multiple id with same name.
+
+HTML Example
+
+<link rel="stylesheet" href="index.css">
+<h1 id="one">Ajith Kumar</h1>
+<h1 id="two">Saravanan</h1>
+
+CSS Example 
+
+#one{
+    color: red;
+}
+#two{
+    color: blue	;
+}
+
+========================================================================================================
+
+4. Universal Selectors - it's used to change the color & style within entier html file.
+
+HTML Example
+
+<link rel="stylesheet" href="index.css">
+<h1>Ajith Kumar</h1>
+<h1>Saravanan</h1>
+<p>Software Engineer</p>
+<div>byee</div>
+
+CSS Example 
+
+*{
+    color: green;
+}
+
+========================================================================================================
+
+CSS Box Model
+=============
+
+The CSS Box Model is essentially a box that waps around every html element.
+
+Types
+=====
+
+1. Margins
+2. Borders
+3. Padding 
+4. Content
+
+========================================================================================================
+
+Sample code using internal CSS to implememt CSS box model margin, borders & padding.
+
+Example-01
+==========
+
+<style>
+    h1{
+        background-color: green;
+        color: orangered;
+        border-color: blue;
+        border-width: 5px;
+        border-style: solid;
+        padding: 30px;
+        margin: 30px;
+    }
+</style>
+<h1>Hello</h1> 
+
+Example-02
+==========
+
+<style>
+    div{
+        background-color: green;
+        height: 100px;
+        width: 100px;
+    }
+</style>
+<style>
+    .one{
+        margin-top: 20px;
+    }
+</style>
+<div></div>
+<div class="one"></div>
+
+Example-03
+==========
+
+<style>
+    div{
+        background-color: black;
+        color: white;
+        padding: 100px;
+        height: 300px;
+        width: 200px;
+
+    }
+</style>
+<div>Hi How are you I hope you are dooing good</div>
+
+Example-03
+
+<style>
+    div{
+        background-color: black;
+        height: 200px;
+        width: 200px;
+        margin: 20px;
+        border: 20px;
+        border-color: green;
+        border-style: solid;
+    }
+</style>
+<div></div>
+
+Example-04
+==========
+
+<style>
+    h1{
+        background-color: black;
+        color: yellowgreen;
+        padding: 30px;
+        text-align: center;
+        margin: 10px;
+    }
+</style>
+<style>
+    p{
+        background-color: gray;
+        color: black;
+        padding: 30px;
+        margin: 30px;
+        border: 10px;
+        border-style: solid;
+        border-color: black;
+    }
+</style>
+<h1>AK Technology Pvt Ltd</h1>
+<p>
+Software Consultancy & Product Development AK Technology has expertise in Web & Mobile Application development. We can develop the full stack for you providing feedback, implement improvements to get your application developed to meet your specifications. Infrastructure Management AK Technology has the expertise to manage your server infrastructure 24x7x365. This enables you to focus on your core business. We can architect / build your cloud infrastructure, monitor your servers, perform OS patches / upgrades. Be it a big data need or a real-time dashboard with multiple metrics or reports, AK Technology can help you meet your end-to-end Analytics needs right from Event logging, ETL jobs to reports delivery.
+</p>
+
+========================================================================================================
+
+Display Properity
+=================
+
+1. Inline       - Same line, fill the size of the content, cannot set width & height.
+2. Inline-block - Same line, fill the size of the content, we can set width & height.
+3. Block        - Different line, fill the size of entire width we can set width & height.
+4. None         - This will hide the element from the html.
+
+=====================================================================================================
+
+Sample code for display inline, inline-block & block.
+
+Example-01
+==========
+
+<style>
+    h1{
+        background-color: green;					
+        display: inline;
+    }
+    p{
+        background-color: yellowgreen;
+        display: inline-block;
+        width: 50px;
+    }
+    h2{
+        background-color: blueviolet;
+        display: block;
+    }
+    div{
+        background-color: palevioletred;
+        display: inline;
+    }
+</style>
+<h1>Hello</h1>
+<p>byee</p>
+<h2>Hello World</h2>
+<div>I am Ajith Kumar</div>
+
+Example-02
+==========
+
+<style>
+    .one{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+    .two{
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+    h2{
+        background-color: yellow;
+        display: inline;
+    }
+    p{
+        background-color: palevioletred;
+        display: inline;
+    }
+</style>
+<div class="one"></div>
+<div class="two"></div>
+<h2>Hi</h2>
+<p>Byee</p>
+
+Example-03
+==========
+
+<style>
+    li{
+        background-color: black;
+        color: white;
+        display: inline;
+        padding: 10px;
+        margin-left: 30px;
+    }
+</style>
+
+<ul>
+    <li>Home</li>
+    <li>About Us</li>
+    <li>Contact Us</li>
+</ul>
+
+Example-04
+==========
+
+<style>
+    nav{
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }
+    h1,ul,li{
+        display: inline;
+    }
+    ul{
+        margin-left: 60%;
+    }
+</style>
+<nav>
+    <h1>Navbar</h1>
+    <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+    </ul>
+</nav>
+
+=======================================================================================================
+
+CSS POSITIONS
+==============
+
+CSS Positions - Properly controls the placement of elements on a webpage.
+
+Types
+=====
+
+1. Static   - default follows the normal documents flow.
+2. Relative - positioned relative to it's normal position 
+3. absolute - positioned relative to it's nearest positiond ancastor. 
+4. Fixed    - positioned relative to the viewpoint remains flexed during scrolling.
+5. Sticky   - the position sticky is hybrid betweeb relative & flexed.
+
+========================================================================================================
+
+Sample code for Static & Relative Positions.
+
+Example 
+
+<style>
+    .one{
+        background-color: green;
+        height: 100px;
+        width: 100px;
+        margin: 5px;
+        position: static;
+    }
+
+    .two{
+        background-color: blueviolet;
+        height: 100px;
+        width: 100px;
+        margin: 5px;
+        position: relative;
+        left: 50px;
+        top: 50px;
+        z-index: 1;
+    }
+
+    .three{
+        background-color: brown;
+        height: 100px;
+        width: 100px;
+        margin: 5px;
+        position: relative;
+        z-index: 2;
+    }
+</style>
+
+<div class="one"></div>
+<div class="two"></div>
+<div class="three"></div>
+
+=====================================================================================================
+
+Sample code for absolute Positions.
+
+Example 
+
+<style>
+    div{
+        margin-left: 100px;
+        margin-top: 200px;
+        border: solid black 3px;
+        width: 200px;
+        height: 100px;
+        position: relative;
+    }
+    h1{
+        position: absolute;
+    }
+</style>
+
+<div>
+    <h1>Hello</h1>
+</div>
+
+====================================================================================================
+
+Sample code for fixed Positions.
+
+Example 
+
+<style>
+    h1{
+        position: fixed;
+        left: 200px;
+        top: 300px;
+    }
+</style>
+
+<div>
+    <p>Hi, I am Ajith Kumar <h1> Hello </h1> from Tiruttani </p>
+</div>
+
+========================================================================================================
+
+Sample code for sticky Positions.
+
+Example 
+
+style>
+    h1{
+        position: sticky;
+        bottom: 10px;
+    }
+</style>
+
+<div>
+    <p>Hi, I am Ajith Kumar <h1> Hello </h1> from Tiruttani </p>
+</div>
+
+=======================================================================================================
+
+CSS Flexbox
+===========
+
+CSS Flexbox - Flexbox is a one-dimensional layout method for arranging items in rows or columns. Items flex (expand) to fill additional space or shrink to fit into smaller spaces.
+
+Example Code
+============
+
+<style>
+    h1{
+        background-color: black;
+        color: white;
+        margin: 2px;
+        padding: 5px;
+    }
+    div{
+        display: flex;
+        flex-direction: row;
+        background-color: greenyellow;
+        padding: 10px;
+        width: 300px;
+        flex-wrap: wrap;
+    }
+</style>    
+<div>
+    <h1>One</h1>
+    <h1>Two</h1>
+    <h1>Three</h1>
+    <h1>Four</h1>
+    <h1>Five</h1>
+    <h1>Six</h1>
+</div>
+
+=======================================================================================================
+
+CSS Justify Content
+===================
+
+CSS Justify Content - justify-content is a CSS property that is used to align and distribute the flex items (or content) along the main axis of a flex container. It controls the horizontal alignment of items within a flex container.
+
+Example Code
+============
+
+<style>
+    h1{
+        background-color: black;
+        color: white;
+        margin: 2px;
+        padding: 5px;
+    }
+    div{
+        display: flex;
+        background-color: greenyellow;
+        padding: 10px;
+        justify-content: space-between;
+        justify-content: flex-start;
+        justify-content: flex-end;
+        justify-content: center;
+        justify-content: space-around;
+    }
+</style>    
+<div>
+    <h1>One</h1>
+    <h1>Two</h1>
+</div>
+
+=======================================================================================================
+
+CSS Flex Bases
+===============
+	
+CSS Flex Bases - Flex-basis is a CSS property used in flexboxes that sets the initial size of a flex item before it grows or shrinks. Flex items exist in flex containers, which grow to fill empty space or shrink to prevent overflow on a web page.
+
+Example Code
+=============
+
+<style>
+    div{
+        display: flex;
+        background-color: greenyellow;
+        padding: 10px;
+        margin: 5px;
+        flex-wrap: wrap;
+    }
+
+    h1{
+        color: white;
+        background-color: black;
+        flex-basis: 20%;
+        margin: 5px;
+        flex-grow: 1;
+    }
+</style>
+
+<div>
+    <h1>one</h1>
+    <h1>two</h1>
+    <h1>three</h1>
+    <h1>four</h1>
+    <h1>five</h1>
+    <h1>six</h1>
+    <h1>seven</h1>
+    <h1>eight</h1>
+</div>
+
+=======================================================================================================
+
+Main Access & Cross Access
+===========================
+
+Example code 
+=============
+
+<style>
+    div{
+        display: flex;
+        flex-direction: column; /*
+        Main Axes Is Rolw*/
+        padding: 10px;
+        background-color: greenyellow;
+        height: 400px; 
+        align-items: center;
+        justify-content: center;      
+    }
+
+    h1{
+        background-color: black;
+        color:white;
+        padding: 5px;
+        margin: 5px;
+        height: fit-content;
+        width: fit-content;
+    }
+</style>
+
+<div>
+    <h1>
+        one
+    </h1>
+</div>
+
+=======================================================================================================
+
+CSS Media Query
+================
+
+CSS Media Query - Media queries allow you to apply CSS styles depending on a device's media type (such as print vs. screen) or other features or characteristics such as screen resolution or orientation, aspect ratio, browser viewport width or height, user preferences such as preferring reduced motion, data usage, or transparency.
+
+Example Code 01 For CSS Media Query Max Width
+=============================================
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    h1{
+        color: red;
+    }
+
+    @media screen and (max-width:600px){
+        h1{
+            color: blue;
+        }
+    }
+
+    @media screen and (max-width:400px){
+        h1{
+            color: green;
+        }
+    }
+</style>
+<h1>hello</h1>
+
+=======================================================================================================
+
+Example Code 02 For CSS Media Query Max Width
+=============================================
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    div{
+        height: 100px;
+        background-color: yellow;
+    }
+
+    @media screen and (max-width:600px){
+        div{
+            height: 100px;
+            background-color: blue;
+        }
+    }
+
+    @media screen and (max-width:400px){
+        div{
+            height: 100px;
+            background-color: red;
+        }
+    }
+</style>
+<div></div>
+
+======================================================================================================
+
+Example Code 03 For CSS Media Query Max Width
+=============================================
+
+<style>
+    .container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .one{
+        background-color: green;
+        margin: 5px;
+        height: 100px;
+        flex-basis: 20%;
+    }
+
+    @media screen and (max-width:800px) {
+        .one{
+            flex-basis: 40%;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="one"></div>
+    <div class="one"></div>
+    <div class="one"></div>
+    <div class="one"></div>
+</div>
+
+=======================================================================================================
+
+Example Code 04 For CSS Media Query Max Width
+=============================================
+
+<style>
+    .one{
+        background-color: black;
+        margin: 5px;
+        height: 100px;
+        width: 100px;
+        float: left;
+    }
+
+    @media screen and (max-width:600px) {
+        .one{
+            float: none ;
+        }
+    }
+</style>
+
+<div>
+    <div class="one"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur perspiciatis voluptatem minima, voluptas aperiam ad quam sequi animi? Provident, recusandae? Architecto cupiditate voluptas, adipisci magni minima incidunt facere sint perspiciatis.</p>
+</div>
+
+=======================================================================================================
+
+Example Code 01 For CSS Media Query Min Width
+=============================================
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    div{
+        height: 100px;
+        background-color: black;
+    }
+
+    @media screen and (min-width:400px){
+        div{
+            height: 100px;
+            background-color: red;
+        }
+    }
+
+    @media screen and (min-width:600px){
+        div{
+            height: 100px;
+            background-color: blue;
+        }
+    }
+
+    @media screen and (min-width:900px){
+        div{
+            height: 100px;
+            background-color: yellow;
+        }
+    }
+</style>
+<div></div>
+
+=======================================================================================================
+
