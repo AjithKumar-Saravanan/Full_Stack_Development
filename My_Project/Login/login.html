@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Login</title>
+    <link rel="icon" href="aklogo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url(lap04.png);
+            background-position: center;
+        }
+
+        .header {
+            background-color: #af6f4c;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .header img {
+            max-height: 50px;
+            vertical-align: middle;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .container h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .social-login {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-login button {
+            background-color: blueviolet;
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            margin: 5px 0;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .google-btn {
+            background-color: #db4437;
+            color: white;
+            border: none;
+        }
+
+        .google-btn:hover {
+            background-color: #c1351d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="aklogo.png" alt="Company Logo">
+        <h1>AK Technology Pvt Ltd</h1>
+    </div>
+
+    <div class="container">
+        <h2>Employee Login</h2>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+
+        <div class="social-login">
+            <button class="google-btn">Login with Google</button>
+        </div>
+    </div>
+
+</body>
+</html>
