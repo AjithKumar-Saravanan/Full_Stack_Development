@@ -1,0 +1,28 @@
+<h1>Guss The Number</h1>
+<input id="gussnumber">
+<button onclick="check()">check</button>
+<p id="result">You are Wrong/Right</p>
+<p id="score">Score</p>
+
+<script>
+    //selecting input box
+    var gussnumber = document.getElementById("gussnumber")
+    var result = document.getElementById("result")
+    var score = document.getElementById("score")
+    var randomNumber = Math.floor(Math.random() * 10) + 1
+    var totalscore = 10
+
+    function check() {
+        var enterednumber = gussnumber.value
+        if (randomNumber == enterednumber) {
+            console.log("Result")
+            result.textContent = "Right"
+            alert("You Worn...")
+        }
+        else {
+            totalscore = totalscore - 1
+            score.textContent = "score:" + totalscore
+            result.textContent = "Wrong"
+        }
+    }
+</script>
