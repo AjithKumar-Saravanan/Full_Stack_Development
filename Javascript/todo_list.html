@@ -1,0 +1,21 @@
+<input id="input">
+<button onclick="add()">Add</button>
+<ul id="listitem">
+    <li>Ajith
+        <button onclick="deleteitem(event)">Delete</button>
+    </li>
+</ul>
+
+<script>
+    //selecting ul
+    var ul = document.getElementById("listitem")
+    var inputitem = document.getElementById("input")
+    function add() {
+        var list = document.createElement("li")
+        list.innerHTML = input.value + "<button onclick='deleteitem(event)''>Delete</button>"
+        ul.append(list)
+    }
+    function deleteitem(event) {
+        event.target.parentElement.remove()
+    }
+</script>
