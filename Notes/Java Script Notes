@@ -1,0 +1,816 @@
+JavaScript
+==========
+
+What is Javascript ?
+Javascript is the worls most populer programming language. it's easy to learn. Javascript is used to create interactive and dynamic web pages. It's responsible for adding functionality to a website and allows for user to intraction with the website's content.
+
+==========================================================================================================
+
+What is Variables ?
+Variables are containers for storing a information or data.
+
+Example Code 
+
+var a=10
+var b=30
+console.log(a+b)
+
+Output
+
+40
+
+=== Code Execution Successful ===
+
+=========================================================================================================
+
+Javascript Variables can be diclared in three way.
+
+1. Using var 
+2. Using let 
+3. Using const
+
+=======================================================================================================
+
+1. Using var - Global Scope
+
+Example Code 
+
+{
+    var a=50
+}
+ console.log(a)
+ 
+Output
+
+50
+
+=== Code Execution Successful ===
+
+======================================================================================================
+
+2. Using let - Private Scope 
+
+Example Code 
+
+{
+    let a=30
+    console.log(a)
+}
+
+Output
+
+30
+
+=== Code Execution Successful ===
+
+========================================================================================================
+
+3. Using const - we are not able change the another value in const variable, it's accept single value.
+
+Example Code 
+
+const weekdays=7
+ console.log(weekdays)
+
+Output
+
+7
+
+=== Code Execution Successful ===
+
+Example Code 
+
+const weekdays=7
+weekdays=10
+ console.log(weekdays)
+
+Output
+
+ERROR!
+/tmp/DDqEGqxqQu/main.js:2
+weekdays=10
+        ^
+TypeError: Assignment to constant variable.
+
+=======================================================================================================
+
+Example Code 
+
+Main.js
+
+var price = 1000
+var product = "iphone15"
+var tax = 100
+console.log(product)
+var total=price+tax
+console.log(total)
+
+output
+
+iphone15
+1100
+
+=== Code Execution Successful ===
+
+=======================================================================================================
+
+Example Code 
+
+Main.js
+
+var frute = "apple"
+var count = 5
+var price = 10
+var total=count*price
+console.log(frute)
+console.log(total)
+
+output
+
+apple
+50
+
+=== Code Execution Successful ===
+
+=======================================================================================================
+
+javascript Keywords
+javascript as a set of reserved keywoeds that have predefind meanings cannot be used as identifiers 	(variable name, function name, etc) in ur code.
+
+=======================================================================================================
+
+Javascript commants 
+Javascript commants can be used to explain Javascript code and to make it more readable.
+Javascript commants can also be used to prevent execution, when testing alternative c0de.
+
+types
+1. Single line command (//javascride  code)
+2. muktiple line command (/* javascript code using multiole variable */)
+
+======================================================================================================
+
+Operators
+==========
+
+increment Operators
+====================
+Example Code
+var a=20
+a++
+console.log(a)
+
+output
+21
+
+=== Code Execution Successful === 
+
+dicrement Operators
+====================
+Example Code
+var a=20
+a--
+console.log(a)
+
+output
+19
+
+=== Code Execution Successful === 
+
+Example Code
+var a=20
+var b=++a
+console.log(b)
+
+output
+21
+
+=== Code Execution Successful === 
+
+=======================================================================================================
+
+Datatypes
+=========
+
+Prinitive Datatype
+1. Number
+2. String
+3. Boolean
+4. Null
+5. Undefined
+
+Non Prinitive Datatype
+1. Object
+2. Array
+
+=======================================================================================================
+
+Javascript functions 
+====================
+
+Javascript functions  - A javascript function is a block of code designed to permorm a particular tasks. A javascript function is executed when "something" invokes it (calls it).
+
+syntax 
+function <functionname> () {}
+
+Example
+function abc()
+{
+    console.log("Function is Working")
+}
+abc()
+
+Example Code-01
+===============
+function samsung() {
+    console.log("This is Samsung Phone")
+}
+samsung()
+
+function oppo() {
+    console.log("This is oppo Phone")
+}
+oppo()
+
+function iphone() {
+    console.log("This is iphone Phone")
+}
+iphone()
+
+function redme() {
+    console.log("This is redme Phone")
+}
+redme()
+
+Example Code-02
+===============
+var a = 10
+var b = 20
+
+function add() {
+    console.log(a + b)
+}
+add()
+
+Example Code-03
+===============
+var factor = "Suriya"
+var fplayer = "Dhoni"
+var fmovie = "Frinds"
+
+function favourate() {
+    console.log("Favourate Actor:" + factor)
+    console.log("Favourate Player:" + fplayer)
+    console.log("Favourate Movie:" + fmovie)
+}
+favourate()
+
+=======================================================================================================
+
+Javascript Parameters
+=====================
+
+In JavaScript, parameters are variables that you list as part of a function definition. They act as placeholders for values that will be passed to the function when it is called. We use parameters in function declarations to give functions the ability to receive input and perform actions based on that input.
+
+Example-01
+==========
+function add(a, b) {
+    console.log(a + b)
+}
+add(20, 30)
+
+Example-01
+==========
+function area(l, b) {
+    var a = l * b
+    console.log("Area is:" + a)
+}
+area(200, 300)
+
+========================================================================================================
+
+Javascript Function Returntype 
+==============================
+
+The result of a function is called its return value and the data type of the return value is called the return type. Every function declaration and definition must specify a return type, whether or not it actually returns a value.
+
+Example-01
+==========
+function myname() {
+    return "Ajith Kumar P S"
+}
+var a = myname()
+console.log(a)
+
+Example-02
+==========
+function add(a, b) {
+    return (a + b)
+}
+var total = add(20,30)
+console.log(total)
+
+=======================================================================================================
+
+javascript Conditional Statements
+=================================
+
+A conditional statement is a statement that can be written in the form “If P then Q,” where P and Q are sentences. For this conditional statement, P is called the hypothesis and Q is called the conclusion.
+
+Example-01
+==========
+if (false) {
+    console.log("it's true")
+}
+else {
+    console.log("it's false")
+}
+
+Example-02
+==========
+var rain = false
+if (rain) {
+    console.log("take an umberella")
+}
+else {
+    console.log("Enjoy the sunshine")
+}
+
+======================================================================================================
+
+logical AND
+===========
+Example
+console.log (true && true && true) //true
+console.log (true && false && true) //false
+
+logical OR
+==========
+Example
+console.log (false || false || true) //true
+
+logical NOT
+===========
+Example
+console.log (!false) //true
+
+=======================================================================================================
+
+Example-01 //traffic Signal 
+==========
+var color = "yello"
+if (color == "red") {
+    console.log("stop")
+}
+
+if (color == "yello") {
+    console.log("Get Ready")
+}
+
+if (color == "green") {
+    console.log("Go")
+}
+
+Example-02 //Mark based apprication
+==========
+var score = 90
+
+if (score <= 50) {
+    console.log("You Need To improve")
+}
+
+else if (score > 50 && score <= 70) {
+    console.log("Good Job")
+}
+
+else if (score > 70) {
+    console.log("Excellent Performance")
+}
+
+=======================================================================================================
+
+FOR LOOP
+========
+
+A for loop in JavaScript repeatedly executes a block of code as long as a specified condition is true. It includes initialization, condition checking, and iteration steps, making it efficient for controlled, repetitive tasks.
+
+Example-01 //using for loop to prient name
+=======
+for (count = 1; count <= 10; count = count + 1) {
+    console.log("Ajith Kumar P S")
+}
+
+Example-02 //using for loop to prient number from 01 to 10
+=======
+for (count = 1; count <= 10; count = count + 1) {
+    console.log(count)
+}
+
+========================================================================================================
+
+Javascript DOM Maniulation
+===========================
+
+What is DOM ?
+
+DOM stands for Document Object Model, a programming interface that allows scripts to interact with web documents. It's a way to represent the structure of HTML or XML documents as a tree of objects. 
+
+What is DOM Maniulation ?
+
+DOM manipulation is the process of changing the structure, style, or content of an HTML document using JavaScript. It's a core concept in web development. 
+
+Example
+=======
+
+<p id="one">Software Engineering</p>
+
+<script>
+    //select ptag using id
+    var para = document.getElementById("one")
+    console.log(para.textContent)
+    para.textContent = "Ajith Kumar"
+</script>
+
+========================================================================================================
+
+Javascript events
+
+A JavaScript event is a specific action that occurs within a web page or application, such as clicking on an element, moving the mouse, pressing a key, or loading a page.
+
+javascript events handlers
+
+Event handlers can be used to handle and verify user input, user actions, and browser actions: Things that should be done every time a page loads. Things that should be done when the page is closed. Action that should be performed when a user clicks a button.
+
+=======================================================================================================
+
+Example // Javascript events handlers code
+=======
+
+<h1 id="one">Hello World</h1>
+<button onclick="change()">Change</button>
+
+<script>
+    //select h1tag using id
+    var head = document.getElementById("one")
+    console.log(head.textContent)
+
+    function change() {
+        head.textContent = "Byee World"
+    }
+</script>
+
+=======================================================================================================
+
+Task-01 //enter sume text in input box, click update button it's visible below as same input box
+=======
+
+<input id="inputbox">
+<button onclick="update()">View</button>
+<h1 id="Result"></h1>
+
+<script>
+    //select input tag & h1 tag
+    var inputb = document.getElementById("inputbox")
+    var result = document.getElementById("Result")
+
+    function update() {
+        result.textContent = inputb.value
+    }
+</script>
+
+Task-02 //enter sume text in input box, it's visible below as same input box.
+=======
+
+<input id="inputbox" onkeyup="update()">
+<h1 id="Result"></h1>
+
+<script>
+    //select input tag & h1 tag
+    var inputb = document.getElementById("inputbox")
+    var result = document.getElementById("Result")
+
+    function update() {
+        result.textContent = inputb.value
+    }
+</script>
+
+Task-03 //clicl add button print below h1 tag based on click
+=======
+
+<button onclick="update()">Add</button>
+<div id="result"></div>
+
+<script>
+    //select h1 tag
+    var division = document.getElementById("result")
+    function update() {
+        //creat new element
+        var listitem = document.createElement("h1")
+        listitem.textContent = "Ajith Kumar P S"
+        division.append(listitem)
+    }
+</script>
+
+Task-04 //click button it's change the button color
+=======
+
+<button id="btn" onclick="change()">Change Color</button>
+
+<script>
+    //select box
+    var Button = document.getElementById("btn")
+
+    function change() {
+        Button.style.backgroundColor = "green"
+    }
+</script>
+
+Task-05 //click multiple button print as per the button name in h1 tag
+=======
+
+<h1 id="result">Name</h1>
+<button onclick="update(event)">Jeevitha</button>
+<button onclick="update(event)">Ajith Kumar</button>
+<button onclick="update(event)">Vinitha</button>
+
+<script>
+    //select h1 tag
+    var haed = document.getElementById("result")
+
+    function update(event) {
+        haed.textContent = event.target.textContent
+    }
+</script>
+
+Task-06 //click delete button, the h1 tag deleted successfully
+=======
+
+<h1 id="one">Hello</h1>
+<button onclick="del()">Delete</button>
+
+<script>
+    //select h1 tag
+    var haed = document.getElementById("one")
+    function del() {
+        haed.remove()
+    }
+</script>
+
+Task-07 //click h1 tag, the clicked h1 tag deleted successfully
+=======
+
+<h1 onclick="del(event)">One</h1>
+<h1 onclick="del(event)">Two</h1>
+<h1 onclick="del(event)">Three</h1>
+<h1 onclick="del(event)">Four</h1>
+<h1 onclick="del(event)">Five</h1>
+<h1 onclick="del(event)">Six</h1>
+
+<script>
+    //select h1 tag
+    var haed = document.getElementById("one")
+    function del(event) {
+        event.target.remove()
+    }
+</script>
+
+=======================================================================================================
+
+Create A TODO List
+==================
+
+What is Inner html ?
+
+innerHTML, innerText and textContent. The innerHTML property returns: The text content of the element, including all spacing and inner HTML tags. The innerText property returns: Just the text content of the element and all its children, without CSS hidden text spacing and tags, except <script> and <style> elements.
+
+Example 
+=======
+<div id="one">
+    <h1>Hello</h1>
+</div>
+
+<script>
+    //select div
+    var division = document.getElementById("one")
+    console.log(division.innerHTML)
+    division.innerHTML = "<h1>Byee</h1>"
+</script>
+
+======================================================================================================
+
+Different Ways Of Selecting An Element.
+
+1. queryselector
+2. queryselectorAll
+3. getElementById
+4. getElementByClassName
+5. getElementByTagName
+
+
+1. queryselector
+
+Example
+=======
+
+<div class="one">
+    <h1>Hello</h1>
+</div>
+
+<script>
+    //select div
+    var division = document.querySelectorAll(".one")
+    console.log(division)
+</script>
+
+2. queryselectorAll
+
+Example
+======
+
+<h1 class="ok">ONE</h1>
+<h1 class="ok">TWO</h1>
+<h1 class="ok">THREE</h1>
+
+<script>
+    //select div
+    var head = document.querySelectorAll(".ok")
+    for (count = 0; count < head.length; count = count + 1) {
+        console.log(head[count].textContent)
+    }
+</script>
+
+
+
+======================================================================================================
+
+Javascript Arrey
+================
+
+An array in JavaScript is a type of global object used to store data. Arrays can store multiple values in a single variable, which can condense and organize our code.
+
+Example -01
+============
+
+var fruit=["apple","orange","banana","grapes"]
+console.log(fruit[1])
+console.log(fruit[3])
+console.log(fruit[0])
+console.log(fruit[2])
+console.log(fruit[4])
+
+Example -02
+============
+
+var fruit = ["apple", "orange", "banana", "grapes"]
+
+for (count = 0; count <= 3; count = count + 1) {
+    console.log(fruit[count])
+}
+
+Example -03
+============
+
+var fruit = ["apple", "orange", "banana", "grapes"]
+console.log(fruit.length)
+for (count = 0; count < fruit.length; count = count + 1) {
+    console.log(fruit[count])
+}
+
+========================================================================================================
+
+Create HTML element
+====================
+
+1. Append Element
+
+Add New HTML Content append() - Inserts content at the end of the selected elements. prepend() - Inserts content at the beginning of the selected elements. after() - Inserts content after the selected elements. before() - Inserts content before the selected elements.
+
+Example 
+=======
+
+<div>
+    <h1>Ajith Kumar P S</h1>
+</div>
+
+<script>
+    var div = document.querySelector("div")
+    div.append("hello")
+</script>
+
+2. Prepend Element 
+
+prepend() method inserts a set of Node objects or strings before the first child of the document. Strings are inserted as equivalent Text nodes. This method prepends a child to a Document .
+
+Example 
+=======
+
+<div>
+    <h1>Ajith Kumar P S</h1>
+</div>
+
+<script>
+    var div = document.querySelector("div")
+    div.prepend("hello")
+</script>
+
+3. Insert Adjacent Element
+
+The insertAdjacentElement() method inserts a an element into a specified position. Legal positions: Value. Description. afterbegin.
+
+Example
+=======
+
+<div>
+    <h1>Sangavi P S</h1>
+    <h1>Ajith Kumar P S</h1>
+</div>
+
+<script>
+    var div = document.querySelector("div")
+    var head = document.createElement("h1")
+    head.textContent = "K S Saravanan"
+    div.insertAdjacentElement("afterbegin", head)
+</script>
+
+Deleting HTML element
+=====================
+
+1. Removementhod
+
+Example
+=======
+
+<h1 id="one">Hello</h1>
+<button onclick="del()">Delete</button>
+
+<script>
+    //select h1 tag
+    var haed = document.getElementById("one")
+    function del() {
+        haed.remove()
+    }
+</script>
+
+======================================================================================================
+
+Create A TODO list from Scratch
+================================
+
+Code
+====
+
+<input id="input">
+<button onclick="add()">Add</button>
+<ul id="listitem">
+    <li>Ajith
+        <button onclick="deleteitem(event)">Delete</button>
+    </li>
+</ul>
+
+<script>
+    //selecting ul
+    var ul = document.getElementById("listitem")
+    var inputitem = document.getElementById("input")
+    function add() {
+        var list = document.createElement("li")
+        list.innerHTML = input.value + "<button onclick='deleteitem(event)''>Delete</button>"
+        ul.append(list)
+    }
+    function deleteitem(event) {
+        event.target.parentElement.remove()
+    }
+</script>
+
+=======================================================================================================
+
+Example Code  //alert msg using event handler function in javascript
+=============
+
+<button id="btn">Show</button>
+
+<script>
+    var button = document.getElementById("btn")
+    button.addEventListener("click", function () {
+        alert("Hello Ajith")
+    })
+
+    button.addEventListener("mouseover", function () {
+        alert("mouse over")
+    })
+</script>
+
+========================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
